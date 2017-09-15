@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html style="width: 100%;">
+   <head>
+      <title>Reservations Declined : Munch Ado</title>
+
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <style type="text/css">
+         @-ms-viewport {width: device-width;}
+         @media screen and (max-device-width: 400px), screen and (max-width: 400px) {
+         img[id="dv1"], img[id="dv2"] {display: none !important;}
+         }
+      </style>
+   </head>
+   <body style="margin: 0; padding: 0; font: normal 16px Arial; color:#333333; width: 100%;">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="550" align="center" cellpadding="0" cellspacing="0" border="0">
+         <tr>
+            <td>
+               <![endif]-->
+               <table align="center" bgcolor="#fff" width="100%" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 550px;">
+                  <tr>
+                     <td align="center" bgcolor="#3d3a39" valign="top" style="background-color:#3e3a39; text-align: center;padding-top:18px;padding-bottom:9px;">
+                        <a href="<?php echo WEB_HOST_URL; ?>" target="_blank" style="border: none; text-decoration: none; outline: none;">
+                        <img src="<?php echo TEMPLATE_IMG_PATH . 'ma_logo.jpg'; ?>" width="250" height="59" style="border: none; height: 59px; width: 250px;">
+                        </a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="center" style="font-size:0">
+
+                        <img src="<?php echo TEMPLATE_IMG_PATH . 'header_reservations_declined.jpg'; ?>" alt="Reservations Declined" style="border: none; width: 100%; max-width: 100%; height: auto;display:block">
+
+                     </td>
+                  </tr>
+                  <tr>
+                     <td bgcolor="#ffffff" align="left" valign="top" style="padding-left:30px;padding-right:30px;">
+                        <table bgcolor="#ffffff" align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="width: 100%;max-width: 490px;">
+                           <tr>
+
+                              <td bgcolor="#ffffff" style="font-family:arial; font-size:18px;padding-top:26px;padding-bottom:20px;line-height:24px; color:#333333;">Sorry <strong><?php echo $this->user_name; ?></strong>,</td>
+                           </tr>
+                           <tr>
+                              <td bgcolor="#f6f8f1" style="font-family:arial; font-size:18px;padding:24px;line-height:24px; color:#333333;text-align:center;"><p style="margin:0;"><img src="#template_img_path#icon_wrong.png" alt="" style="margin-bottom:10px;"></p>
+                                 It looks like <strong><?php echo $this->restaurant_name; ?></strong> had to shut the reservation for <strong><?php echo $this->number_of_people; ?></strong> on <strong><?php echo $this->reserved_date; ?></strong> at <strong><?php echo $this->reserved_time; ?></strong> down.</td>
+                           </tr>
+                           <tr>
+                              <td bgcolor="#ffffff" style="font-family:arial; font-size:18px;padding-top:20px;line-height:24px; color:#333333;">They did say why though:
+                                 <i style="display:block;color:#867f7c;padding-top:24px;padding-bottom:24px;padding-left:20px;padding-right:20px;">&#8220;<?php echo $this->restaurant_comment; ?>&#8221;</i>
+                                 We think they sound sorry, and sincere, - and err French- FINE WE CAN&#8217;T READ.<br /><br />We hope you&#8217;ll try another dish or someplace else though because we&#8217;re sure you still want to eat just like we want to keep learning to read. If you keep poking around Munch Ado, and we keep working on our alphabet, we&#8217;ll both reach our goals. One day at a time <strong><?php echo $this->friend_name; ?></strong>, one day at a time.</td>
+                           </tr>
+                           <tr>
+                              <td bgcolor="#ffffff" style="padding-top:36px;padding-bottom:41px;" valign="middle" align="center">
+                                 <!--[if mso]>
+                                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://munchado.com" style="height:60px;v-text-anchor:middle;width:460px;" arcsize="9%" stroke="f" fillcolor="#a2cd01">
+                                              <w:anchorlock/>
+                                              <center>
+                                            <![endif]-->
+                                            <a href="<?php echo WEB_HOST_URL; ?>" target="_blank" class="learAboutLoyality"
+                                               style="background-color:#a2cd01;border-radius:6px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:1.5em;font-weight:normal;padding:13px 0;text-align:center;text-decoration:none;width:100%;max-width:460px;-webkit-text-size-adjust:none;text-transform: uppercase;">dream big</a>
+                                            <!--[if mso]>
+                                                </center>
+                                              </v:roundrect>
+                                            <![endif]-->
+                              </td>
+                           </tr>
+                           <tr>
+                              <td bgcolor="#ffffff" style="font-family:arial;font-size:18px;font-weight:bold;">If you have any questions, feel free to call us at <a href="tel:1-888-345-1303" style="font-weight:bold;color:#3d3a39;text-decoration:none">1-888-345-1303</a> or chat with us online right now!<br /><br /></td>
+
+                           </tr>
+                           <?php if (isset($this->restaurant_name)) { 
+                                  $find = array("The");
+                                 ?>
+                                <tr>
+                                    <td style="padding-top:30px;padding-bottom:19px;font-family:arial;font-size:18px;line-height:24px;">Best,<br />The <?php echo str_replace($find," ", $this->restaurant_name); ?> Staff</td>
+                                </tr>
+                            <?php }?>
+                        

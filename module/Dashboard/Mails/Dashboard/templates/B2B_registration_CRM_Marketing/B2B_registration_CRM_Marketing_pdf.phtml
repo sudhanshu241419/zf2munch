@@ -1,0 +1,532 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Restaurant Agreement</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body style="margin: 0; padding: 0; border:0; font-size:12px; font-family:arial; color:#000000">
+    <table border="0" cellpadding="0" cellspacing="0" width="760" style="font-size:12px; font-family:Arial; line-height:16px; margin:0 auto; color:#000000;">
+
+        <tr>
+            <td>
+                <table border="0" cellpadding="0" cellspacing="0" width="760">
+                    <tr>
+                        <td height="20"></td>
+                    </tr>
+                    <tr>
+                        <td width="760" style="vertical-align:bottom ;"><img src="<?php echo TEMPLATE_IMG_PATH.'mabiz-logo.jpg';?>" style="border:0px;" alt="logo">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20"></td>
+                    </tr>
+                    <tr>
+                        <td align="left">
+                            <table border="0" cellpadding="0" cellspacing="0" width="760">
+                                <tr>
+                                    <td height="20" valign="middle" style="background:#ff8308; text-align:center;font-size:12px; font-family:Arial; line-height:16px; font-weight:bold;color:#000000">CONTACT INFO</td>
+                                </tr>
+                                <tr>
+                                    <td height="8"></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="760">
+                                            <tr>
+                                                <td width="106" height="16" valign="bottom" align="right" style="font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">Restaurant</td>
+                                                <td width="30" height="16" valign="bottom">&nbsp;</td>
+                                                <td width="324" height="16" valign="bottom" style="border-bottom:1px solid #8b8b8b; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">
+                                                    <?php echo $this->restaurant_name;?> </td>
+                                                <td width="90" height="16" valign="bottom" align="right" style="font-size:11px;font-weight:bold;  font-family:Arial; line-height:16px; color:#000000">Cell Phone</td>
+                                                <td width="30" height="16" valign="bottom">&nbsp;</td>
+                                                <td width="180" height="16" valign="bottom" style="border-bottom:1px solid #8b8b8b; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">
+                                                    <?php echo $this->cellphone;?></td>
+                                            </tr>
+                                            <tr>
+                                                <td width="106"  height="16" valign="bottom" align="right" style="font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Address</td>
+                                                <td width="30" height="16" valign="bottom">&nbsp;</td>
+                                                <td width="324"  height="16" valign="bottom" style="border-bottom:1px solid #8b8b8b; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">
+                                                    <?php echo $this->address;?> </td>
+                                                <td width="90"  height="16" valign="bottom" align="right" style="font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">Fax</td>
+                                                <td width="30" height="16" valign="bottom">&nbsp;</td>
+                                                <td width="180"  height="16" valign="bottom" style="border-bottom:1px solid #8b8b8b; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">
+                                                    <?php echo $this->fax;?> </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="106"  height="16" valign="bottom" align="right" style="font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">City, State, Zip</td>
+                                                <td width="30" height="16" valign="bottom">&nbsp;</td>
+                                                <td width="324"  height="16" valign="bottom" style="border-bottom:1px solid #8b8b8b; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">
+                                                    <?php echo $this->city_state;?> </td>
+                                                <td width="90"  height="16" valign="bottom" align="right" style="font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Email</td>
+                                                <td width="30" height="16" valign="bottom">&nbsp;</td>
+                                                <td width="180"  height="16" valign="bottom" style="border-bottom:1px solid #8b8b8b; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">
+                                                    <?php echo $this->email;?></td>
+                                            </tr>
+                                            <tr>
+                                                <td width="106"  height="16" valign="top" align="right" style="font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Contact Title</td>
+                                                <td width="30" height="16" valign="bottom">&nbsp;</td>
+                                                <td width="324"  height="16" valign="top" style="border-bottom:1px solid #8b8b8b; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="324" style="font-size:12px; font-family:Arial; line-height:16px; margin:0 auto; color:#000000; word-break:break-all;">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="96" valign="middle" style="font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">
+                                                                    <?php echo $this->owner_title;?></td>
+                                                                <td width="96" valign="middle" style="font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">&nbsp;Contact Name:&nbsp;</td>
+                                                                <td width="132" valign="middle" style="font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">
+                                                                    <?php echo $this->owner_name;?></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                                <td width="90"  height="16" valign="bottom" align="right" style="font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Contact 1</td>
+                                                <td width="30" height="16" valign="bottom">&nbsp;</td>
+                                                <td width="180"  height="16" valign="bottom" style="border-bottom:1px solid #8b8b8b; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">
+                                                    <?php echo $this->contact1;?></td>
+                                            </tr>
+                                            <tr>
+                                                <td width="106"  height="16" valign="bottom" align="right" style="font-size:11px; font-family:Arial; line-height:16px;color:#000000"><span style="font-size:11px;font-weight:bold;  font-family:Arial; line-height:16px; color:#000000">Phone Number</span>
+                                                </td>
+                                                <td width="30" height="16" valign="bottom">&nbsp;</td>
+                                                <td width="324"  height="16" valign="bottom" style="border-bottom:1px solid #8b8b8b; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">
+                                                    <?php echo $this->phone;?></td>
+                                                <td width="90" height="16" valign="bottom" align="right" style="font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Contact 2</td>
+                                                <td width="30" height="16" valign="bottom">&nbsp;</td>
+                                                <td width="180"  height="16" valign="bottom" style="border-bottom:1px solid #8b8b8b; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">
+                                                    <?php echo $this->contact2;?> </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>                   
+                    <tr>
+                        <td height="8">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td height="10"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table border="0" cellpadding="0" cellspacing="0" width="760">
+                                <tr>
+                                    <td height="20" valign="middle" style="background:#ff8308; text-align:center;font-size:12px; font-family:Arial; line-height:16px; font-weight:bold">RESTAURANT SERVICES</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="760">
+                                            <tr>
+                                                <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-top:1px solid #000000;border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Tick all that apply:</td>
+                                                <td width="190" style=" vertical-align:middle;padding:3px 10px;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Delivery &nbsp;&nbsp;<img src="<?php echo TEMPLATE_IMG_PATH.$this->chkdelivery;?>" style="vertical-align:middle;  border:0px;" alt="">
+                                                </td>
+                                                <td width="190" style="padding:3px 10px;border-bottom:1px solid #000000;border-top:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Takeout/Pickup &nbsp;&nbsp;<img src="<?php echo TEMPLATE_IMG_PATH.$this->chktakeout;?>" style="vertical-align:middle;  border:0px;" alt="">
+                                                </td>
+                                                <td width="190" style="padding:3px 10px;border-bottom:1px solid #000000;border-top:1px solid #000000;border-right:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Reservations &nbsp;&nbsp;<img src="<?php echo TEMPLATE_IMG_PATH.$this->chkreservations;?>" style="vertical-align:middle;  border:0px;" alt="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="190" style="padding:3px 10px;border-bottom:1px solid #000000; border-left:1px solid #000000">&nbsp;</td>
+                                                <td width="190" style="padding:3px 10px;border-bottom:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Delivery by MUNCH ADO &nbsp;&nbsp;<img src="<?php echo TEMPLATE_IMG_PATH.$this->delivery_by_ma;?>" style="vertical-align:middle;  border:0px;" alt="">
+                                                </td>
+                                                <td width="190" style="padding:3px 10px;border-bottom:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">&nbsp;</td>
+                                                <td width="190" style="padding:3px 10px;border-bottom:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000;border-right:1px solid #000000;">
+                                                    <!--Prepaid Reservations  &nbsp;&nbsp;<img src="<?php echo TEMPLATE_IMG_PATH.$this->chkprepaidres;?>" style="vertical-align:middle;  border:0px;" alt="">-->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="8">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td height="10"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table border="0" cellpadding="0" cellspacing="0" width="760">
+                                <tr>
+                                    <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-top:1px solid #000000;border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Minimum Delivery Amount:</td>
+                                    <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-top:1px solid #000000;border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                                        <?php echo $this->min_delivery_amt;?></td>
+                                    <td width="190" style="padding:3px 10px;   border-top:1px solid #000000;border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000" valign="bottom">Preferred mode of receiving</td>
+                                    <td width="190" style="padding:3px 10px;  border-top:1px solid #000000;border-left:1px solid #000000; border-right:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Email &nbsp;&nbsp;&nbsp;&nbsp;<img src="<?php echo TEMPLATE_IMG_PATH.$this->pmodeemail;?>" style="vertical-align:middle;  border:0px;" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fax &nbsp;&nbsp;<img src="<?php echo TEMPLATE_IMG_PATH.$this->pmodefax;?>" style="vertical-align:middle;  border:0px;" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Delivery Fee (if any):</td>
+                                    <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                                        <?php echo $this->delivery_fee;?></td>
+                                    <td width="190" style="padding:0px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000" valign="top">food order or reservation:</td>
+                                    <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;border-right:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Phone &nbsp;&nbsp;<img src="<?php echo TEMPLATE_IMG_PATH.$this->pmodephone;?>" style="vertical-align:middle; border:0px;" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Delivery Hours (weekdays):</td>
+                                    <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                                        <?php echo $this->dh_week;?></td>
+                                    <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Hours of operations (weekdays):</td>
+                                    <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;border-right:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                                        <?php echo $this->hoo_week;?></td>
+                                </tr>
+                                <tr>
+                                    <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Delivery Hours (Saturday):</td>
+                                    <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                                        <?php echo $this->dh_sat;?></td>
+                                    <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Hours of operations (Saturday):</td>
+                                    <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;border-right:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                                        <?php echo $this->hoo_sat;?></td>
+                                </tr>
+                                <tr>
+                                    <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Delivery Hours (Sunday):</td>
+                                    <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                                        <?php echo $this->dh_sun;?></td>
+                                    <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Hours of operations (Sunday):</td>
+                                    <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;border-right:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                                        <?php echo $this->hoo_sun;?></td>
+                                </tr>
+                                <tr>
+                                    <td width="190" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Delivery Zone (indicate street limits):</td>
+                                    <td width="570" colspan="3" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;border-right:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:20px;color:#000000">
+                                        <?php echo $this->delivery_area;?> </td>
+                                </tr>
+                                <tr>
+                                    <td width="190" valign="top" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">Additional Notes:</td>
+                                    <td width="570" colspan="3" valign="top" style="padding:3px 10px;  border-bottom:1px solid #000000; border-right:1px solid #000000; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000; height:40px;  word-break:break-all;">
+                                        <?php echo $this->delivey_instrucation;?> </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                                       <td height="20" valign="middle">&nbsp;</td>
+                                    </tr>
+                    <tr>
+                        <td>
+                            <table border="0" cellpadding="0" cellspacing="0" width="760">
+                                <tr>
+                                    <td height="20" valign="middle" style="background:#ff8308; text-align:center;font-size:12px; font-family:Arial; line-height:16px; font-weight:bold;color:#000000">PAYMENT INFORMATION</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:0px;   border-right:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="760">
+                                            <tr>
+                                                <td width="190" style="padding:3px 10px; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">Payment Method</td>
+                                                <td width="190" style=" padding:3px 10px;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">Check &nbsp;&nbsp;<img src="<?php echo TEMPLATE_IMG_PATH.$this->check_method;?>" style="vertical-align:middle; border:0px;" alt=""> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ACH &nbsp;&nbsp;<img src="<?php echo TEMPLATE_IMG_PATH.$this->ach_method;?>" style="vertical-align:middle; border:0px;" alt="">
+                                                </td>
+                                                <td width="190" style="padding:3px 10px; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">Bank Account number (ACH)</td>
+                                                <td width="190" style="padding:3px 10px;border-bottom:1px solid #000000; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">
+                                                    <?php echo $this->bank_account_no;?></td>
+                                            </tr>
+                                            <tr>
+                                                <td width="190" style="padding:3px 10px; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">Payee name for check </td>
+                                                <td width="190" style=" padding:3px 10px;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000 ;border-bottom:1px solid #000000;">
+                                                    <?php echo $this->payee_name_check;?></td>
+                                                <td width="190" style="padding:3px 10px; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">Routing number (ACH) </td>
+                                                <td width="190" style=" padding:3px 10px;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000 ;border-bottom:1px solid #000000;">
+                                                    <?php echo $this->rounting_no_ach;?></td>
+                                            </tr>
+                                            <tr>
+                                                <td width="190">&nbsp;</td>
+                                                <td width="190">&nbsp;</td>
+                                                <td width="190" style="padding:3px 10px; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000">Payee name for ACH</td>
+                                                <td width="190" style=" padding:3px 10px;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px; color:#000000 ;border-bottom:1px solid #000000;">
+                                                    <?php echo $this->payee_name_ach;?></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding:3px 10px; border-bottom:1px solid #000000;  border-right:1px solid #000000; border-left:1px solid #000000;font-size:10px; font-weight:bold; font-family:Arial; line-height:20px;color:#000000">
+                                        <!--NOTE: payment by check is free and is made weekly. Payment by ACH are made weekly and incur a $1.00 per ACH transaction
+                                          fee. -->
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+    </table><!-- table -->
+
+    <table border="0" cellpadding="0" cellspacing="0" width="760" style="font-size:12px; font-family:Arial; line-height:16px; margin:0 auto; color:#000000;">
+        <tr>
+                                       <td height="20" valign="middle">&nbsp;</td>
+                                    </tr>
+        <tr>
+                              <td align="center" style="padding:6px 0px; font-size:18px;font-family:Arial; line-height:15px;color:#000000; text-align:center"><span style="font-size:15px; font-weight:bold; font-family:Arial; line-height:16px;  color:#000000; text-transform: uppercase;"><strong>Munch Ado Marketing Program</strong></span></td>
+                           </tr>
+                           <tr>
+                              <td height="10" valign="middle">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="padding:6px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify"><strong>The Munch Ado Restaurant Market Program  </strong>(&ldquo;Munch Ado&rdquo;) is designed to incrementally and continuously improve your restaurant business by initiating and increasing the value of conversations with customers (&ldquo;Restaurant&rdquo;).</td>
+                           </tr>
+                           <tr>
+                              <td style="padding:6px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">
+                                 <table border="0" style="border:1px solid #000000; padding: 0 10px;" cellspacing="0" cellpadding="0" align="center" width="758">
+                                    <tr>
+                                        <td height="5" valign="middle">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">1. &nbsp; This agreement will be for a twelve (12) month period and will automatically renew month-to-month until cancelled by either party with 30 days&rsquo; notice.</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">2. &nbsp; Munch Ado will generate two (2) messages and two (2) offers per month for Restaurant.</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">3. &nbsp; Munch Ado will share the messages and offers via Social Media, Display Advertising, Email, and/or the Munch Ado in-app messaging system, depending on Restaurant&rsquo;s specific needs and situation.</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">4. &nbsp; Munch Ado will provide social media marketing management and 24/7 support for the messages/offers.</td>
+                                    </tr>
+                                    <tr>
+                                       <td height="10" valign="middle">&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                       <td valign="top">
+                                          <table border="0" cellspacing="2" cellpadding="2" align="center">
+                                                <tr>
+                                                   <td align="center"><span style="font-size:14px; text-align: center"><strong>Cost: $300 cost  per month per location (with a one-time set up fee of $300 per location)</strong></span></td>
+                                                </tr>
+                                          </table>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="padding:2px 0px; font-size:11px;font-family:Arial; font-weight:bold; line-height:15px;color:#000000">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000"><strong>Deliverables from Munch Ado:</strong> Munch Ado will:</td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <table border="0" cellpadding="0" cellspacing="0" width="760" >
+                                   
+                                    <tr>
+                                        <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">1.</td>
+                                       <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">Schedule custom photography sessions at the Restaurant, at Munch Ado&rsquo;s discretion, for the messages/offers.</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">2.</td>
+                                       <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">Provide Restaurant with the ability to engage with its customers through email marketing and social media advertising</td>
+                                    </tr>
+                                    <tr>
+                                       <td colspan="2" valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">
+                                          <table width="760" border="0" cellspacing="0" cellpadding="0">
+                                             <tbody>
+                                                <tr>
+                                                   <td  style=" font-size:11px;font-family:Arial; line-height:15px;color:#000000;">&nbsp;&nbsp;&nbsp;a. &nbsp; Munch Ado will use your Facebook/Instagram/Twitter/email accounts to send incentives from your restaurant to your customers</td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">3.</td>
+                                       <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">Provide you with a Munch Ado Account Executive to manage our partnership</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">4.</td>
+                                       <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">Propose to Restaurant various promotions that Restaurant will have the option to participate in</td>
+                                    </tr>
+                                    
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="padding:8px 0px 2px; font-size:11px;font-family:Arial; line-height:15px;color:#000000"><strong>Requirements from Client:</strong> Client will:</td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <table border="0" cellpadding="0" cellspacing="0" width="760">
+                                    <tr>
+                                    <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">1.</td>
+                                       <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">Provide Munch Ado the use its logo(s)</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">2.</td>
+                                       <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">Provide Munch Ado with access to your social media platforms and email system</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">3.</td>
+                                       <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">Share customer data with Munch Ado in order to facilitate the messages/offers</td>
+                                    </tr>
+                                    
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="padding:8px 0px 2px; font-size:11px;font-family:Arial; font-weight:bold; line-height:15px;color:#000000"><strong>Terms and Conditions</strong>:</td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <table border="0" cellpadding="0" cellspacing="0" width="760">
+                                    <tr>
+                                        <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">&bull; </td>
+                                       <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">Term: After the initial contract length, the agreement will continue on a month to month basis until terminated by either party with 30 day notice.  Restaurant may cancel this agreement at any time with 30 days&rsquo; notice</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">&bull; </td>
+                                       <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">Payment Terms: Munch Ado will invoice Client on the first of each month.</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">&bull; </td>
+                                       <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">Customer data will not be sold, or made available, to competitors but will be used by Munch Ado for business purposes </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">&bull; </td>
+                                       <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify"> Non-Refundable: Under no circumstance shall payments already received by Munch Ado be refundable.</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">&bull; </td>
+                                       <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:left">The IAB Standard Terms and Conditions Version 3.0 are incorporated herein by reference (<a href="http://www.aaaa.org/news/bulletins/Documents/2010InternetTsCsv30FINAL.pdf">http://www.aaaa.org/news/bulletins/Documents/2010InternetTsCsv30FINAL.pdf</a>).</td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:justify">&bull; </td>
+                                       <td valign="top" style="padding:2px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000; text-align:left">Delays caused by Client: In the event Client delays sending information necessary for Munch Ado to commence and complete the Project in a timely fashion, in that case Munch Ado will not be responsible for delivering the Project as per the completion date. Based upon the length of the delay in receipt of the necessary information by Munch Ado, Munch Ado will recalculate the estimated completion date of the Project and notify the Client. Under no circumstances shall Munch Ado be liable for any resulting delays</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <table border="0" cellpadding="0" cellspacing="0" width="760">
+                                    <tr>
+                                       <td valign="top" style="padding:20px 0px 2px; font-size:11px;font-family:Arial;  line-height:15px;color:#000000"><img src="<?php echo TEMPLATE_IMG_PATH.'mabiz-check-img.jpg';?>" style="vertical-align:middle;  border:0px;" alt=""> &nbsp;&nbsp;By signing up on Munch Ado, you agree to the Terms and Conditions</td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <table border="0" cellpadding="0" cellspacing="0" width="760">
+                                    <tr>
+                                       <td valign="bottom" style="padding:20px 0px 0px; font-size:11px;font-family:Arial;  line-height:15px;color:#000000">
+                                          <table border="0" cellpadding="0" cellspacing="0" width="760">
+                                             <tr>
+                                                <td height="16" valign="bottom" style="padding:20px 0px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000">Agreement signed on: </td>
+                                                <td height="16" valign="bottom" style=" border-bottom:1px solid #8b8b8b;padding:20px 0px 0px; font-size:11px;font-family:Arial; line-height:15px;color:#000000">
+                                                <?php echo $this->created_on;?></td>
+                                             </tr>
+                                          </table>
+                                       </td>
+                                    </tr>
+                                 </table>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td height="30"></td>
+                           </tr>
+    </table><!-- end of first table -->
+
+    <table border="0" cellpadding="0" cellspacing="0" width="760" style="font-size:12px; font-family:Arial; line-height:16px; margin:0 auto; color:#000000;">
+
+        <tr>
+            <td>
+                <table align="center" width="760" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td align="center" style="vertical-align:bottom;font-size:9px; font-family:Arial; line-height:15px; color:#000000">
+                            <p style="vertical-align:middle; margin:0; font-size:9px; font-family:Arial; line-height:15px; color:#000000"><a href="https://munchado.com/" target="blank" style="text-decoration:none; color:#f5832d">www.munchado.com</a>&nbsp;&nbsp; 1-888-345-1303 &nbsp; 245 Fifth Avenue, Suite 1002, New York, NY 10016</p>
+                            <p style="vertical-align:middle; margin:0; font-size:9px; font-family:Arial; line-height:15px; color:#000000"><a href="https://www.facebook.com/MunchAdo" target="blank" style="text-decoration:none; color:#000000"><img src="<?php echo TEMPLATE_IMG_PATH.'mabiz-facebook-icon.jpg';?>" style="vertical-align:middle" alt="facebook"> &nbsp;facebook.com/MunchAdo</a> &nbsp;&nbsp;&nbsp; <a href="https://twitter.com/@Munch_Ado" target="blank" style="text-decoration:none; color:#000000"><img src="<?php echo TEMPLATE_IMG_PATH.'mabiz-twitter-icon.jpg';?>" style="vertical-align:middle" alt="twitter"> @Munch_Ado</a> &nbsp;&nbsp;&nbsp; <a href="mailto:wecare@munchado.com" style="text-decoration:none; color:#000000"><img src="<?php echo TEMPLATE_IMG_PATH.'mabiz-mail-icon.jpg';?>" style="vertical-align:middle" alt="mail"> wecare@munchado.com</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td height="30"></td>
+        </tr>
+
+    </table><!-- table -->
+
+
+    <table border="0" cellpadding="0" cellspacing="0" width="760" style="font-size:12px; font-family:Arial; line-height:16px; margin:0 auto; color:#000000;">
+        
+        <tr>
+            <td colspan="2" valign="middle" align="center" height="20" style="background:#ff8308; text-align:center;font-size:12px; font-family:Arial; line-height:16px; font-weight:bold;color:#000000">ADDITIONAL INFO</td>
+        </tr>
+        <tr>
+                        <td align="right" style="padding:3px 10px; border-top:1px solid #000000;border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000; border-right:1px solid #000000">Instructions</td>
+                        <td style="padding:3px 10px; border-right:1px solid #000000; border-top:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                            <?php echo $this->rest_instructions;?></td>
+        </tr>
+        <tr>
+                        <td align="right" style="padding:3px 10px;  border-bottom:1px solid #000000; border-top:1px solid #000000;border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000; border-right:1px solid #000000">Website</td>
+                        <td style="padding:3px 10px;  border-bottom:1px solid #000000;border-right:1px solid #000000; border-top:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                            <?php echo $this->website;?></td>
+        </tr>
+        <tr>
+                        <td align="right" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000;border-right:1px solid #000000">Sales Associate's Name</td>
+                        <td style="padding:3px 10px;  border-bottom:1px solid #000000;border-right:1px solid #000000; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                            <?php echo $this->associatename;?></td>
+        </tr>
+        <tr>
+                        <td align="right" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000;border-right:1px solid #000000">Sales Associate's Email</td>
+                        <td style="padding:3px 10px;  border-bottom:1px solid #000000;border-right:1px solid #000000; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                            <?php echo $this->associateemail;?></td>
+        </tr>
+        <tr>
+                        <td align="right" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000;border-right:1px solid #000000">Sales Associate's Region</td>
+                        <td style="padding:3px 10px;  border-bottom:1px solid #000000;border-right:1px solid #000000; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                            <?php echo $this->associateregion;?></td>
+                    </tr>
+                    <tr>
+                        <td  align="right" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000;border-right:1px solid #000000">Phone1</td>
+                        <td style="padding:3px 10px;  border-bottom:1px solid #000000;border-right:1px solid #000000; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                            <?php echo $this->phone1;?></td>
+        </tr>
+        <tr>
+                        <td align="right" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000;border-right:1px solid #000000">Phone2</td>
+                        <td style="padding:3px 10px;  border-bottom:1px solid #000000;border-right:1px solid #000000; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                            <?php echo $this->phone2;?></td>
+        </tr>
+
+        <tr>
+                        <td align="right" valign="top" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000;border-right:1px solid #000000">Owner Email
+                            <span style="font-size:10px;font-family:Arial; line-height:12px;color:#000000;">(Contract Sent to)</span>
+                        </td>
+                        <td valign="middle" style="padding:3px 10px;  border-bottom:1px solid #000000;border-right:1px solid #000000; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                            <?php echo $this->owneremail;?></td>
+        </tr>
+
+        <tr>
+                        <td valign="top" align="right" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000;border-right:1px solid #000000">Owner Cell</td>
+                        <td valign="top" style="padding:3px 10px;  border-bottom:1px solid #000000;border-right:1px solid #000000; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                            <?php echo $this->ownercell?></td>
+        </tr>
+
+        <tr>
+                        <td valign="top" align="right" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000;border-right:1px solid #000000">Payment Method</td>
+                        <td valign="top" style="padding:3px 10px;  border-bottom:1px solid #000000;border-right:1px solid #000000; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                            <?php echo $this->paymentMode?></td>
+        </tr>
+
+        <tr>
+                        <td valign="top" align="right" style="padding:3px 10px;  border-bottom:1px solid #000000; border-left:1px solid #000000;font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000;border-right:1px solid #000000">Uploaded Menu</td>
+                        <td valign="top" style="padding:3px 10px;  border-bottom:1px solid #000000;border-right:1px solid #000000; font-size:11px; font-weight:bold; font-family:Arial; line-height:16px;color:#000000">
+                            <?php echo $this->attachment_path?></td>
+        </tr>
+        <tr>
+            <td colspan="2" height="10"></td>
+        </tr>
+    </table><!-- table -->
+
+</body>
+
+</html>

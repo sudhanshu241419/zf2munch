@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "firebase-munchado",
+  "private_key_id": "8ddb5c1a2800f630c1833a32ebc17e640014c263",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCWT9r3M1Y/ugTB\nvyuBT/7KAnhg3T+36LC6xHpLILCfk6FmqI6YzWFAHBB1OS0LLO9gP72XRQQhw2Na\n9fPhO5yAzXEBSDAkKvbaBf6YBSumcI7qSq5JYGOrUIUsaKWU7no8PULtyhZIsbiC\n0YqLIPbiHmc/paYuwKpzeb98uK5NEc8YcXB599ofEejz3+kNNTpS4XzVsLVsfzpq\n2wYhx0IOrLrGo4XoSTTO2vp9YoS3c+B16FiUQPJqYm8HZXlCH/EWhCVVJ5wQ1tVZ\nEqkLLACDDE1yxnvsNcdn66ZBu7RLCjF714tldJUjhBgN7MBShmgkJyopsXSCluJv\nhKKnqvIFAgMBAAECggEAahxbjrEuDPTL0N6c3r/TNVaDFpZ6GeFpiZ+UWZ7tMOnu\nQeNyLwqlwbVOJQLE+qOxJPg6ZiRxo0gkxpzkmrcTZ5YgVXBZk97EvusGbNkRlIDX\nUyx/Vwt1sQW5zbzeT4H+xrHUortL+euEPs2gCVGvF7ew2ayd4Vlfuv9Sn8BcQ8je\nuzyEYVbabEHzxOfqWJakb14ky6HGxkmHw4CVMWMpoIxO9qH3FSrfM52WIgNKjlqH\nsbaNmw6wwLCn12sAmRsDXnGhMD7X8dTCxhPM0jVBt3YDYa/kFBZMNzIvBxjEmb8C\ndcPO2b+tkbe1AthNJNi4jUvYkKHLoTBRGQLVnouIAQKBgQDFfJ5irZr2ejnbTwCC\nldYbje0KRdMrL6kyFXDQi9pkEPLps87U301SHB/3wgZOEiirh2k/hOSTg4ITbq4i\n6BGOMulpTXed246/OYtVJqVzyZUd+gmeu5u5LZeW2PlUdvz7taPQya0h3YagLsKV\nFwEu82IDesyEzWGHZcJpsHMyAQKBgQDC2QWUuVwtP3AZKOIgdhJAOrqUNLeP+xv+\n7qzo7rSro6phoeVPSx5g2wrFBro9BaU2OZ8Lrrr/VsZey16Fhd2lYAsyNjkCLtCS\n8Iq29L5N1vFzdLaoK2SQJ0qdERQ/T8M9PW1uyDV6oAFFampAJGW23+0CLsBN39OV\n31ATyPr4BQKBgHTT/ha+QPgi4ms81z5pSZpPYbU8DWp07ZD1YiHdOjsMU8exWWBR\nIbq7bKXzICu7Tlf66WZsRZSGrcK1LUr1Ir2OnMpwy5yVMGMrtaOQEzzmOdLcAijn\nL35i3FSe0xEGuy5lDB4N0OBB3syQHQh57XdK/+azFJ5TqaihqFtByUQBAoGAFaHa\niMR7g1qDq4dqc4goRpE+na2so4ORfCArekDmNhgZlnVO7Bq+6Kno7C7vBk9WJEsJ\naVag1DBiHawedlyCWxXqqEx0z9U6utWR0PYjGqk+bT8L+Ge45ng2RHHc+Zp1Zpsn\nRyFbLp4NBhPmb/Caik8aFR/zobGz3/PHBCtQEbECgYEAr1jJzZfROzw3KShZfVGx\nr1DeFj2cqSFmF70qd6mJ8d2WL1TCreSdy/Kxg/knL8PHuwLQRmg89tTNwnfrY/HP\nNGpkoAMwOudw4z+JM3lv1cwWwX5QL0akdu4FFICPBXaEVn22ZGZ2cG5iyzUbuJ0c\nJ3yyzg9EdOA2oyZaoXfpyPE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "munchado@firebase-munchado.iam.gserviceaccount.com",
+  "client_id": "102310653497043978891",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/munchado%40firebase-munchado.iam.gserviceaccount.com"
+}

@@ -1,0 +1,19 @@
+<?php
+
+return array (
+        'db' => array (
+                'master' => array (
+                        'master1' => array (
+				'driver' => 'Pdo',
+				'username' => 'user',
+				'password' => 'hbuser@123',
+				'dsn' => 'mysql:dbname=MunchAdo;host=192.168.29.250',
+				'driver_options' => array (
+					PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\''
+				)
+                        ) 
+                ) 
+
+        ) 
+
+);

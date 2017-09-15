@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html style="width: 100%;">
+   <head>
+      <title>We Can Squeeze You In at [Restaurant]!</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <style type="text/css">
+         @-ms-viewport {
+         width: device-width;
+         }
+         @media screen and (max-device-width: 414px), screen and (max-width: 414px) {
+         img[id="dv1"], img[id="dv2"] {
+         display: none !important;
+         }
+         a[class="visitTheMunchAdoBogBtn"]{font-size:.7em !important;}
+         }
+      </style>
+   </head>
+   <body style="margin: 0; padding: 0; font: normal 16px/24px Arial; color: #3d3a39; width: 100%;">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="550" align="center" cellpadding="0" cellspacing="0" border="0" style="550px;">
+         <tr>
+            <td>
+               <![endif]-->
+               <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border: none; max-width: 550px; overflow: hidden; font-family: Arial;">
+                  <tr>
+                     <td align="center" bgcolor="#3d3a39" valign="top" style="background-color:#3e3a39; text-align: center;padding-top:18px;padding-bottom:9px;">
+                        <a href="<?php echo WEB_HOST_URL; ?>" target="_blank" style="border: none; text-decoration: none; outline: none;">
+                        <img src="<?php echo TEMPLATE_IMG_PATH . 'ma_logo.jpg'; ?>" width="250" height="59" style="border: none; height: 59px; width: 250px;">
+                        </a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="center" valign="top" style="padding: 0 30px;">
+                        <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 490px;">
+                           <tr>
+                              <td style="font: normal 16px Arial; color: #3d3a39; text-align: left; padding-top: 18px;padding-bottom:20px;" align="left">
+                                Thanks <strong><?php echo $this->user_name; ?></strong> for snagging a spot!<br /><br />We&#8217;re looking forward to seeing you on <strong>Today</strong> at <strong><?php echo $this->reserved_time_to; ?></strong>.<br /><br />It&#8217;s a fine time and a fine day for a fine meal at the best table available. Your details are as follows: 
+
+                              </td>
+                           </tr>
+                            <tr>
+                                <td bgcolor="#f5f4f4">
+                                   <table align="left" width="100%" border="0" border-collapse="collapse" cellpadding="0" cellspacing="0">
+                                   <tr>
+                                         <td style="font-family:arial; font-size:18px; padding:14px; color:#333333;"><p style="margin:0;font-weight: bold;">Restaurant Name:</p>
+                                      <?php echo $this->restaurant_name; ?></td>
+                                      </tr>
+                                      <tr>
+                                         <td style="font-family:arial; font-size:18px; padding:14px; color:#333333;"><p style="margin:0;font-weight: bold;">Snag a Spot Number:</p>
+                                      <?php echo $this->receipt_number; ?></td>
+                                      </tr>
+                                      <tr>
+                                         <td style="font-family:arial; font-size:18px; padding:14px; color:#333333;"><p style="margin:0;font-weight: bold;">Map-able Location:</p>
+                                      <?php echo $this->res_address; ?></td>
+                                      </tr>
+                                      <tr>
+                                         <td style="font-family:arial; font-size:18px; padding:14px; color:#333333;"><p style="margin:0;font-weight: bold;">Number of People(s):</p>
+                                      <?php echo $this->number_of_people; ?></td>
+                                      </tr>
+                                      <tr>
+                                         <td style="font-family:arial; font-size:18px; padding:14px; color:#333333;"><p style="margin:0;font-weight: bold;">Time of Snag a Spot:</p>
+                                      <?php echo $this->reserved_date; ?> at <?php echo $this->reserved_time; ?></td>
+                                      </tr>
+                                      <tr>
+                                         <td style="font-family:arial; font-size:18px; padding:14px; color:#333333;"><p style="margin:0;font-weight: bold;">Time to Snag a Spot :</p>
+                                      <?php echo $this->reserved_date_to; ?> at <?php echo $this->reserved_time_to; ?></td>
+                                      </tr>
+                                      <tr>
+                                         <td style="font-family:arial; font-size:18px; padding:14px; color:#333333;"><p style="margin:0;font-weight: bold;">Special Instructions:</p>
+                                      <i>-<?php echo $this->instruction; ?></i></td>
+                                      </tr>
+                                   </tbody></table>
+                                </td>
+                             </tr>
+                            <tr>
+                              <td style="font-family:arial;font-size:16px;padding-top:20px">We can&#8217;t wait to see you! </td>
+                            </tr>
+                            <?php if (isset($this->restaurant_name)) { 
+                                  $find = array("The");
+                                 ?>
+                                <tr>
+                                    <td style="padding-top:30px;padding-bottom:19px;font-family:arial;font-size:18px;line-height:24px;">Best,<br />The <?php echo str_replace($find," ", $this->restaurant_name); ?> Staff</td>
+                                </tr>
+                            <?php }?>
+
+                                

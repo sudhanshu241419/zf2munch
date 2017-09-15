@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html style="width: 100%;">
+   <head>
+      <title>We Can Squeeze You In at [Restaurant]!</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <style type="text/css">
+         @-ms-viewport {
+         width: device-width;
+         }
+         @media screen and (max-device-width: 414px), screen and (max-width: 414px) {
+         img[id="dv1"], img[id="dv2"] {
+         display: none !important;
+         }
+         a[class="visitTheMunchAdoBogBtn"]{font-size:.7em !important;}
+         }
+      </style>
+   </head>
+   <body style="margin: 0; padding: 0; font: normal 16px/24px Arial; color: #3d3a39; width: 100%;">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="550" align="center" cellpadding="0" cellspacing="0" border="0" style="550px;">
+         <tr>
+            <td>
+               <![endif]-->
+               <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="width: 100%; border: none; max-width: 550px; overflow: hidden; font-family: Arial;">
+                  <tr>
+                     <td align="center" bgcolor="#3d3a39" valign="top" style="background-color:#3e3a39; text-align: center;padding-top:18px;padding-bottom:9px;">
+                        <a href="<?php echo WEB_HOST_URL; ?>" target="_blank" style="border: none; text-decoration: none; outline: none;">
+                        <img src="<?php echo TEMPLATE_IMG_PATH . 'ma_logo.jpg'; ?>" width="250" height="59" style="border: none; height: 59px; width: 250px;">
+                        </a>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="center" valign="top" style="padding: 0 30px;">
+                        <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 490px;">
+                           <tr>
+                              <td style="font: normal 16px Arial; color: #3d3a39; text-align: left; padding-top: 18px;padding-bottom:20px;" align="left">
+                                Hey <strong><?php echo $this->user_name; ?></strong><br /><br />We&#8217;re sorry to say, but we can&#8217;t fit your party in at your requested time :(<br/><br/>We hope you&#8217;ll try again soon!</td>
+                           </tr>
+                           <?php if (isset($this->restaurant_name)) { 
+                                  $find = array("The");
+                                 ?>
+                                <tr>
+                                    <td style="padding-top:30px;padding-bottom:19px;font-family:arial;font-size:18px;line-height:24px;">Best,<br />The <?php echo str_replace($find," ", $this->restaurant_name); ?> Staff</td>
+                                </tr>
+                            <?php }?>

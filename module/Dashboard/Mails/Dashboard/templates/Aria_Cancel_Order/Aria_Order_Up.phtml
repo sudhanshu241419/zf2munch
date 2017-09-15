@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html style="width: 100%;">
+   <head>
+      <title>Aria | CICCHETTI & OMBRE</title>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   </head>
+   <body style="margin: 0; padding: 0; font: normal 16px Arial; color:#333333; width: 100%;">
+      <!--[if (gte mso 9)|(IE)]>
+      <table width="550" align="center" cellpadding="0" cellspacing="0" border="0">
+         <tr>
+            <td>
+               <![endif]-->
+               <table align="center" bgcolor="#fff" width="100%" border="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 550px;">
+                  <tr>
+                     <td align="center" style="font-size:0">
+                        <img src="<?php echo TEMPLATE_IMG_PATH.'header_aria.jpg';?>" alt="Aria | CICCHETTI & OMBRE" style="border: none; width: 100%; max-width: 100%; height: auto;display:block;min-height: 100px;">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td bgcolor="#ffffff" align="left" valign="top" style="padding-left:30px;padding-right:30px;padding-top:30px;">
+                        <table bgcolor="#ffffff" align="left" width="100%" border="0" cellpadding="0" cellspacing="0" style="width: 100%;max-width: 490px;">
+                           <tr>
+                                <td bgcolor="#ffffff" style="font-family:arial; font-size:18px;line-height:24px; color:#333333;">Hey <strong><?php echo $this->name;?></strong>,<br /><br />You&#8217;ve put together an amazing order.<br /><br />
+                                </td>
+                             </tr>
+                             <tr>
+                                <td bgcolor="#f5f4f4">
+                                    <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0">
+                                      <tr>
+                                         <td style="font-family:arial; font-size:18px; padding:14px; color:#333333;"><p style="margin:0;font-weight: bold;">Order Type:</p>
+                                      <?php echo $this->order_type;?></td>
+                                      </tr>
+                                      <tr>
+                                         <td style="font-family:arial; font-size:18px; padding:14px; color:#333333;"><p style="margin:0;font-weight: bold;">Receipt number:</p>
+                                      <?php echo $this->receipt_number;?></td>
+                                      </tr>
+                                      <tr>
+                                         <td style="font-family:arial; font-size:18px; padding:14px; color:#333333;"><p style="margin:0;font-weight: bold;">Delivery to:</p>
+                                      <?php echo $this->delivery_to;?></td>
+                                      </tr>
+                                      <tr>
+                                         <td style="font-family:arial; font-size:18px; padding:14px; color:#333333;"><p style="margin:0;font-weight: bold;">Time of Order:</p>
+                                      <?php echo $this->time_of_order;?></td>
+                                      </tr>
+                                      <tr>
+                                         <td style="font-family:arial; font-size:18px; padding:14px; color:#333333;"><p style="margin:0;font-weight: bold;">Time to Delivery:</p>
+                                      <?php echo $this->time_to_delivery;?></td>
+                                      </tr>
+                                      <tr>
+                                         <td style="font-family:arial; font-size:18px; padding:14px; color:#333333;"><p style="margin:0;font-weight: bold;">Special Instructions:</p>
+                                      <i>-<?php echo $this->delivery_instruction;?></i></td>
+                                      </tr>
+                                   </table>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td bgcolor="#ffffff" height="20"></td>
+                             </tr>
+                             <?php echo $this->order_data;?>
+                             <tr>
+                                <td height="20" bgcolor="#ffffff"></td>
+                             </tr>
+                             <tr>
+                                <td bgcolor="#f5f4f4" style="padding:20px;">
+                                   <table width="100%" border="0" cellpadding="0" cellspacing="0" style="font-family:arial;font-size:18px;line-height:30px;">
+                                      <tr>
+                                         <td align="right" width="50%" style="font">Subtotal:</td>
+                                         <td align="left">$<?php echo $this->sub_total;?></td>
+                                      </tr>
+                                      <?php echo $this->delivery_charge;?>
+                                      <tr>
+                                         <td align="right">Tax:</td>
+                                         <td align="left">$<?php echo $this->tax;?></td>
+                                      </tr>
+                                      <tr>
+                                         <td align="right">Tip Amount:</td>
+                                         <td align="left">$<?php echo $this->tip_amount;?></td>
+                                      </tr>
+                                      <tr style="font-size:28px;font-weight:bold;">
+                                         <td align="right" style="padding-top:27px;">Total:</td>
+                                         <td align="left" style="padding-top:27px;">$<?php echo $this->total;?></td>
+                                      </tr>
+                                   </table>
+                                </td>
+                             </tr>
+                             <tr>
+                                <td height="10"></td>
+                             </tr>
+                             <tr bgcolor="#f5f4f4">
+                                <td style="padding:20px;font-size:18px;font-family:arial;"><strong>Payment:</strong><br /><br /><strong>Credit Card:</strong><br/><?php echo $this->card_type;?> (XXXX-XXXX-XXXX-<?php echo $this->card_number;?> /<br>Exp: <?php echo $this->expired_on;?>)</td>
+                             </tr>
+                             <tr>
+                                <td bgcolor="#ffffff"style="font-family:arial; font-size:18px;line-height:24px; color:#333333;padding-top:26px">We hope you&#8217;ll enjoy eating it as much as we love making it!
+                                </td>
+                             </tr>
+                           <tr>
+                              <td bgcolor="#ffffff" style="padding-bottom:48px;padding-top:24px;font-family:arial;font-size:18px;line-height:24px;">For Best,<br /><?php echo $this->restaurant_name;?></td>
+                           </tr>
+                        </table>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="center" style="font-size:0">
+                        <img src="<?php echo TEMPLATE_IMG_PATH.'add_westvillage.jpg';?>" alt="Aria hell's kitchen 369 W 51st St, New York, NY 10019 b/t 9th Ave & 8th Ave" style="border: none; width: 100%; max-width: 100%; height: auto;display:block;">
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="center" style="font-size:0">
+                        <img src="<?php echo TEMPLATE_IMG_PATH.'add_hellkitchen.jpg';?>" alt="Aria West Village 117 Perry St, New York, NY 10014 b/t Hudson St & Greenwich St" style="border: none; width: 100%; max-width: 100%; height: auto;display:block;">
+                     </td>
+                  </tr>
+                  

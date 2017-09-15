@@ -1,0 +1,16 @@
+<?php
+return array (
+        'db' => array (
+                'slave' => array (
+                        'slave1' => array (
+                                'driver' => 'Pdo',
+                                'username' => 'root',
+                                'password' => '',
+                                'dsn' => 'mysql:dbname=hungry_buzz;host=localhost',
+                                'driver_options' => array (
+                                        PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES \'UTF8\'' 
+                                ) 
+                        ) 
+                ) 
+        ) 
+);

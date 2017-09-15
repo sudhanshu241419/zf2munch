@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/sudhanshu/workspace/munch/module/Dashboard/src/Model/DashboardReservation.php</file>
+            <file>file:/home/sudhanshu/workspace/munch/vendor/MCommons/src/Model/AbstractModel.php</file>
+            <file>file:/home/sudhanshu/workspace/munch/module/Dashboard/src/Controller/DashboardReservationController.php</file>
+            <file>file:/home/sudhanshu/workspace/munch/module/User/config/module.config.php</file>
+            <file>file:/home/sudhanshu/workspace/munch/config/konstants.php</file>
+            <file>file:/home/sudhanshu/workspace/munch/module/Dashboard/Functions/DashboardFunctions.php</file>
+            <file>file:/home/sudhanshu/workspace/munch/module/Dashboard/src/Controller/DashboardReviewController.php</file>
+            <file>file:/home/sudhanshu/workspace/munch/module/Dashboard/src/Model/Restaurant.php</file>
+            <file>file:/home/sudhanshu/workspace/munch/module/User/Mails/MA/templates/ma_micro_reservation_confirm.phtml</file>
+        </group>
+    </open-files>
+</project-private>

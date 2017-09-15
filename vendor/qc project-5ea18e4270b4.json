@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "qc-project-158114",
+  "private_key_id": "5ea18e4270b46a2ad93fc21dc050a25bf6223250",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCmuxu77k/duNRh\nRdX3N5MDUw7fuI/wXTAmZz+6HWAwJ+rXZiGDx6LjFG0PYeeqNt49gYhXp0IlbLrJ\nkJH1KsfE7FgUcLNNG+NqZ+0vI2GnChSO/DN8UX+anrryJl5cp2YQXJyUjbNNtn6R\n2Uk76fAKdDm/ZU2wA0tLBz8ODTQ34esADNtIXwV37jByFFrOu8z0RbvXbeCkX2Os\nRXr572ByKG27U7fdkSbv0veHXUff09FEfRuTfJPHPrDPQGqCb9Rv77sHjqAerNf1\naOnJErViD+YpAgX7yEkmr/4SCiih3GFvG7M2+uxn909haZHc7B9CDpe1jQm42j4J\nYR79Jfy3AgMBAAECggEAAKa6dQF5TmRqb/bV3yFYcarhY/5UkZvLlFrS5Oc4ePeu\n8yhy+RDOkhSCWI0JWqDcPWFEJxOALqU+FYt7BnokTaCet3W5PZPeT4wYYRbCSuS/\nL8/MY6/tz6zPDiMYO0RsIaQ6+FmVWbhcxjUTFCjVxzStBRJgO0/H+4MLvAJRMeau\nZhOmLyyzGZxzecWei8dWsdaXjN7Z+gNQ6E2Vo8U9zBPJHefSTC5X7CYJaF3ertIB\n3rhA8cffPU/O+bsKwfBXpR9fsmLXwZP6g/oWbCqgj4Sk/zrLUg+lroT6KD8p4g3U\nMEcLHNOA0tuYTep56N+lahykgg3e9JDCGOwQUtgYAQKBgQDd0cZQYUGBBOjztZY9\nHTZjFIxDsDaLhrUfVp+hPZxrP6f7A1hSKOeFsP7Of4LjBNfLozmOIdassx0kCrsC\n9aHDtwRe9bjo7sfgfftIiOIFN3lA3n+208a3THHDnCjdiNOcy1dOrJlpekBZhBRv\nI74Z1ihJKqHPMKewNHS/MxQAbQKBgQDAbDpIFDs+I3gmg2XMS6LwsnAUsNB8QF9Y\ntyfoYXFj4OtBBwsxtAWGwN6aoJNYKktU5yPjaNTh5RVDOoDqkbR7QeaKT0uSxCjf\ngtM6/yP2BWIharfCTQnTr5WNPI8p4VKGiIkAq8PckUvMWo1PX5+7qdev2Io4GHvk\nJsMg4acjMwKBgQCOy3U713AAq3V/Nf1yeDTD0b198ZkbdutwMiZu+SeRzxfHOl8H\n/PcWFFvj+Sf8FukIWZo6ikQVRvTSd+ntvMyXHmE89DhGEzkupks2ZZACxbRT8ygK\nPQimhRqTTxrriiKXxDr/FZNo2F9GgQVaiordPQUQHNavd2Xrw8kIMMyGfQKBgQCW\nwPQUXo1fjIhonA9YNHXu383B2BkvD3vj1HMWs6kTmDaX1r3lbeXagiakvGNT8qbc\nWM6cLxiB9mlnJ2Gy5P6ihqno+GD8FmTzX9q/4P66k9Mi3SoktxiY2Xpwkd6T8C0o\nq7Wyad/kYY0iCFunsQJDE7ig0yTO+BewUtITY9b/UwKBgHP9oGmj3RdjOuZ7ElS/\nXscz6M49eLejhCLtM2a6u6SVpMSCsgO/Jen8wo0pM3Nx3bnTeGA8O+AXw1hkXsw8\nzFhXlcvRBFvme/0zIgj+ErWfCub9/ETYHs3LfE+PQxnSYs9MxcURrMi7hvd1nPb2\n1uw7L4PEIxr0vy4ZRfTMgqUm\n-----END PRIVATE KEY-----\n",
+  "client_email": "qc-hungrybuzz-info@qc-project-158114.iam.gserviceaccount.com",
+  "client_id": "106588494650346928422",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/qc-hungrybuzz-info%40qc-project-158114.iam.gserviceaccount.com"
+}

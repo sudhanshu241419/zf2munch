@@ -1,0 +1,7 @@
+<phpunit bootstrap="./bootstrap.php" colors="true" backupGlobals="false">
+    <testsuites>
+        <testsuite name="MunchAdo Test Suite">
+            <directory>./</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

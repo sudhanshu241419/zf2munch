@@ -1,0 +1,151 @@
+<tr>
+   <?php if(isset($this->restaurant_logo) && !empty($this->restaurant_logo)){ ?>
+   <td align="center" style="font-size:0; background:#000000;padding-top:10px;padding-bottom:10px;" valign="middle">       
+       <img src="<?php echo IMAGE_PATH.strtolower($this->rest_code).'/'.$this->restaurant_logo;?>" alt="<?php echo strtolower($this->restaurant_name);?>" style="max-width:200px;max-height:150px;display:block">
+   </td>
+   <?php }else{ ?>
+   <td align="center" valign="middle" style="font-size:16px;background:#000000;text-align:center;color:#ffffff;padding-top:10px;padding-bottom:10px;">
+      <?php echo $this->restaurant_name; ?> 
+   </td>
+   <?php } ?>
+</tr>
+<tr>
+   <td bgcolor="#ffffff" align="left" valign="top" style="padding-left:20px;padding-right:20px;">
+      <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" >
+          <tr>
+         <td style="font: normal 16px Arial; color: #3d3a39; text-align: left; padding-top: 18px;" align="left">
+           <!--Bug Id 42252-->
+           
+            <?php if($this->status == 'rejected'){ ?>
+                Hey <strong><?php echo $this->user_name;?></strong><br><br>
+                We&#8217;re sorry to say, but we can&#8217;t fit your party in at your requested time :(                
+            <?php               
+               }elseif($this->status == 'confirmed'){                 
+               ?>
+                Thanks <strong><?php echo $this->user_name;?></strong> for snagging a spot!<br><br>
+                We&#8217;re looking forward to seeing you on <strong><?php echo $this->reserved_date; ?></strong> at <strong><?php echo $this->reserved_time; ?></strong>.
+                <br/><br/>It&#8217;s a fine time and a fine day for a fine meal at the best table available. Your details are as follows:
+            <?php }else{ ?>
+                Hey <strong><?php echo $this->user_name;?></strong><br><br>
+                We can&#8217;t fit your party in at your requested time, but we can fit you in soon.      
+            <?php }?>
+         </td>
+         </tr>
+         <tr><td height="20">&nbsp;</td></tr>
+         <?php if($this->status != 'rejected'){ ?>
+         <tr>
+            <td bgcolor="#f5f4f4">
+               <table align="left" width="100%" border="0" border-collapse="collapse" cellpadding="0" cellspacing="0" >
+                  <tr>
+                     <td style="font-family:arial; font-size:18px; padding:14px; color:#333333;">
+                        <p style="margin:0;font-weight: bold;">Receipt number:</p>
+                        <?php echo $this->receipt_number;?>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td style="font-family:arial; font-size:18px; padding:14px; color:#333333;">
+                        <p style="margin:0;font-weight: bold;">Map-able Location:</p>
+                        <?php echo $this->map_address;?>
+                     </td>
+                  </tr>
+                  
+                  <tr>
+                     <td style="font-family:arial; font-size:18px; padding:14px; color:#333333;">
+                        <p style="margin:0;font-weight: bold;">Number of People(s):</p>
+                        <?php echo $this->reserved_seats;?>
+                     </td>
+                  </tr>
+                 
+                  <tr>
+                     <td style="font-family:arial; font-size:18px; padding:14px; color:#333333;">
+                        <p style="margin:0;font-weight: bold;">Time of Reservation:</p>
+                        <?php echo $this->reserved_date;?> at <?php echo $this->reserved_time?><!--Aug 18, 2015 at 01:11 PM-->
+                     </td>
+                  </tr>
+                  <?php if(isset($this->instruction) && !empty($this->instruction)){?>
+                  <tr>
+                     <td style="font-family:arial; font-size:18px; padding:14px; color:#333333;">
+                        <p style="margin:0;font-weight: bold;">Special Instructions:</p>
+                        <?php echo "-".$this->instruction;?><!--Aug 18, 2015 at 02:15 PM-->
+                     </td>
+                  </tr>
+                  <?php }?>
+               </table>
+            </td>
+         </tr>
+         <?php }?>  
+         <tr>
+            <td bgcolor="#ffffff" height="10"></td>
+         </tr>
+        <tr>
+            <td style="font-family:arial;font-size:16px;padding-top:18px;"> 
+               <?php if($this->status == 'rejected'){ ?>
+               We hope you&#8217;ll try again soon!          
+               <?php }elseif($this->status == 'confirmed'){?>
+               We can&#8217;t wait to see you!              
+               <?php }else{ ?>
+               Does this work for you?
+               <?php } ?>
+            </td>
+         </tr> 
+        
+             
+         <tr>
+            <td style="padding-top:30px;padding-bottom:19px;font-family:arial;font-size:18px;line-height:24px;">
+               Best,<br />The <?php echo $this->restaurant_name;?> Staff
+            </td>
+         </tr>
+   </td>
+</tr>
+<tr>
+   <td bgcolor="#333333" align="center" valign="top" style="padding-left:20px;padding-right:20px;">
+      <table bgcolor="#333333" align="center" width="100%" border="0" border-collapse="collapse" cellpadding="0" cellspacing="0" style="width: 100%;max-width: 510px;">
+         <tr>
+            <td height="16" style="line-height:1px; font-size:0" >&nbsp;</td>
+         </tr>
+         <tr>
+            <td align="center" >
+               <table bgcolor="#333333" align="center" width="100%" border="0" border-collapse="collapse" cellpadding="0" cellspacing="0" style="width: 100%;max-width: 510px;">
+                  <tr>
+                     <td align="center">
+                        <p style="font-family:arial; font-size:12px;line-height:16px; color:#ffffff; text-align:center; font-weight:bold; margin:0; padding:0; text-transform:uppercase; letter-spacing:2px ">
+                           <?php echo $this->restaurant_address;?>
+                        </p>
+                     </td>
+                  </tr>
+                  <tr>
+                     <td align="center" height="24" style="line-height:1px; font-size:0">&nbsp;</td>
+                  </tr>
+                  <tr>
+                     <td align="center">
+                        <span style="display: inline-block; width: auto; overflow: hidden; width: 100%; max-width: 275px;">
+                        <?php if(!empty($this->facebook_url)){?>
+                        <a href="<?php echo $this->facebook_url;?>" target="_blank" style="display: inline-block; outline:none">
+                        <img src="<?php echo TEMPLATE_IMG_PATH; ?>i_fb.png" alt="Facebook" width="11" height="24" border="0">
+                        </a>
+                        <?php }?>
+                            <?php if(!empty($this->twitter_url)){?>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="<?php echo $this->twitter_url;?>" style="display: inline-block; outline:none">
+                        <img src="<?php echo TEMPLATE_IMG_PATH; ?>i_twtr.png" alt="Twitter" width="20" height="24" border="0">
+                       <?php } ?>
+                        </a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <?php if(!empty($this->instagram_url)){?>
+                        <a href="<?php echo $this->instagram_url;?>" target="_blank" style="display: inline-block; outline:none">
+                        <img src="<?php echo TEMPLATE_IMG_PATH; ?>inst.png" alt="Instagram" width="20" height="24" border="0">
+                        </a>
+                        <?php } ?>
+                        </span>
+                     </td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+         <tr>
+            <td height="18"  style="line-height:1px; font-size:0">&nbsp;</td>
+         </tr>
+      </table>
+   </td>
+</tr>
+<!-- end of footer -->

@@ -1,0 +1,9 @@
+#QA_SERVER     = "qc.munchado.in"
+QA_SERVER     = "192.168.29.159"
+set  :application_env,  "qa"
+set :user, "ubuntu"
+set :deploy_to, "/home/ubuntu/applications/#{application}"
+role :app,              QA_SERVER
+role :web,              QA_SERVER 
+role :migration,        QA_SERVER
+#after "deploy:update", "purge_varnish_cache"
